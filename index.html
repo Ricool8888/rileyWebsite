@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Riley's Website</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://rubenwardy.com/lichess_widgets/lichess_widgets.css"
+</head>
+	<body>
+  <header>
+	  <h1> Welcome to my Website! </h1>
+  </header>
+  <!--Begin navigation bar-->
+  <div class="topnav" id="Topnav">
+     <a href="index.html" class="active" title="Home">HOME</a>
+     <a href="https://w3schools.com/html/default.asp" title="W3Schools HTML">HTML</a> 
+     <a href="https://w3schools.com/css/default.asp" title="W3Schools CSS">CSS</a> 
+     <a href="https://w3schools.com/php/default.asp" title="W3Schools PHP">PHP</a>
+     <div class="search-container">
+     <!--TODO Change the action of the form--><form action="/index.php">
+	 <input type-"text" placeholder="Search" name="search"> 
+	 <button type="submit"> <i class="fa fa-search"></i></button>
+	 </form>
+     </div>
+    </div>
+    <br>
+    <!--End navigation bar-->
+
+    <!--Begin form information-->
+  <form id="form1" action="index.php" method="post" autocomplete="on" formtarget="_blank">
+	    <fieldset>
+		    <legend>Create an account:</legend>
+		    <label for="fname">First name:</label>
+		    <input type="text" name="fname" id="fname" maxlength="15" placeholder="Riley" autofocus required> <br>
+		    <label for="lname">Last name:</label>
+		    <input type="text" name="lname" id="lname" maxlength="15" placeholder="Khan" required> <br>
+		    <label for="email">Email:</label>
+		    <input type="email" name="email" id="email" maxlength="30" placeholder="ricool54321@hotmail.com" required> <br>
+		    <label for="password">Password:</label>
+		    <input type="password" name="password" id="password" minlength="8" required> <br>
+		    <label for="phone">Phone number:</label>
+		    <input type="tel" name="phone" id="phone" placeholder="647-523-0049" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"> <br>
+		    <label for="reset">Reset:</label>
+		    <input type="reset" name="reset" id="reset" value="Reset" onclick="reset()"> <br>
+
+	<!-- Script to reset all fields for the first form -->
+	<script>
+		function reset(){
+		document.getElementById("fname").innerHTML = "";
+		document.getElementById("lname").innerHTML = "";
+		document.getElementById("email").innerHTML = "";
+		document.getElementById("password").innerHTML = "";
+		document.getElementById("phone").innerHTML = "";
+		}
+	</script>
+	<noscript> Sorry, your browser does not support the code for the reset button.</noscript>
+	<!-- END OF SCRIPT -->
+
+		    <label for="submit">Submit:</label>
+		    <input type="submit" name="submit" id="submit" value="Submit"> <br>
+	    </fieldset>
+    </form>
+    <!--End of form-->
+    <br>
+
+    <!--Iframe for lichess top game being played-->
+    <iframe src="https://lichess.org./tv/frame?theme=wood&bg=dark" style="width:400px; height=444px;" allowfullscreen="true" frameborder="0"> </iframe>
+    
+    <!--Iframe for lichess puzzle of the day-->
+    <iframe src="https://lichess.org/training/frame?theme=wood&bg=dark" style="width:400px; height=444px;" frameborder="0"></iframe>
+
+    <script>lichess_widgets.profile_big("dark","Ricool8888","My Lichess"); </script>
+
+    <br>
+
+	<!--Begin footer of the page-->
+    <footer>
+	    <address style="font-size: 25px;">Creator of website: <b>Riley Khan</b> </address>
+	    <p style="font-size: 25px;">Contact us: </p> <br>
+	    <a href="mailto:ricool54321@hotmail.com" title="Send email to ricool54321@hotmail.com" style="color: purple; background-color: yellow; font-size: 20px;">ricool54321@hotmail.com</a> |
+	    <p style="display: inline-block; font-size: 20px;">T: <b>647-523-0049</b> </p>
+	    <p style="font-size: 25px;">Connect with me: </p>
+
+	    <!--Social links-->
+	    <div class="bottom-nav">
+	    <a href="https://www.instagram.com/ricool55555" title="Instagram" class="fa fa-instagram"></a> 
+	    <a href="https://linkedin.com/in/riley-khan/" title="Linkedin" class="fa fa-linkedin"></a> 
+	    <a href="https://twitch.tv/ricool55555" title="Twitch" class="fa fa-twitch"></a> 
+	    <a href="https://facebook.com/riley.khan.56/" title="Facebook" class="fa fa-facebook"></a> 
+            <a href="https://twitter.com/Bossy_Broski" title="Twitter" class="fa fa-twitter"></a> 
+	    <a href="https://www.lichess.org/@/Ricool8888" title="Lichess" class="fa">Lichess</a> 
+	    <a href="https://www.chess.com/member/tactics_lose_games" title="Chess.com" class="fa">Chess.com</a> 
+	    <a href="https://chess.ca/en/ratings/" title="CFC" class="fa">CFC Rating</a> 
+	    <a href="https://ratings.fide.com/profile/2637570" title="FIDE" class="fa">FIDE Profile</a>
+	    <a href="https://etobicokechessclub.wordpress.com" title="Wordpress" class="fa">Etobicoke Chess Club</a>
+	    </div>
+    </footer>
+
+</body>
+</html>
+
+<!-- 
+
+<pre> tag defines preformatted text, and will preserve both spaces and line breaks.
+
+b tag for bold text, i for italic text, em for emphasized text, mark for marked (highlight) text, del fordeleted (strikethrough) text, ins for inserted (underlined) text, sub for subcript text, sup for superscript text.
+
+abbr tag is for abbreviation, and is useful for broswers, translation systems and search-engines
+
+address tag defines the contact information for the author/owner of a document/article
+
+CSS can be added to HTML in 3 ways:
+
+Inline - by using the style attribute inside html elements
+Internal - by using a style element in the head section
+External - by using a link element to link to an external css file
+
+The target attribute specifies where to open the linked document and has one of the following values:
+_self - Default, opens the document in the same window/tab as it was clicked
+_blank - Opens the document in a new window or tab 
+_parent - Opens the document in the parent frame
+_top - Opens the document in the full body of the window
+
+To use an image as a link, just put the ima tag inside the a tag
+
+Use mailto: inside the href attribute to create a link that opens the user's email program 
+
+The title attribute specifies extra information about an element.  The information is most often shown as a tooltip when the mouse moves over the element.
+
+Use the id attribute to create a bookmark then use the href attribute to link to the bookmark
+
+The picture element allows to display different pictures for different devices or screen sizes.
+
+To caption a table, use the caption tag
+
+The dl tag defines the description list, dt tag defines the term (name) and the dd tage describes each item
+
+Block level elements always starts on a new line and takes up the full width available
+
+Inline elements do not start on a new line and only takes up as much width as necessary
+
+The div element is often used as a container for other HTML elements
+
+The span element is an inline container used to mark up a part of a text, or a part of a document
+
+The HTML iframe tage specifies an inline frame and is used to display a web page within a webpage
+
+The HTML script tag is used to define a client-side script (JS)
+
+To select an HTML element, JS most often uses the document.getElementById() method
+
+It is best to use relative paths (if possible)
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> should be included in all web pages
+
+The base element specifies the base URL and/or target for all relative URLs in a page
+
+Nav defines a set of navigation links
+
+Aside defines content aside from the content (like a sidebar)
+
+Details defines additional details that the user can open and close on demand
+
+Summary defines a heading for the details element
+
+Types of input element:
+text
+radio
+checkbox
+submit
+button
+
+Action attribute defines the action to be performed when the form is submitted
+
+The method attribute specifies the HTTP method to use when submitting the form data
+
+The default HTTP method when submitting form data is GET
+
+GET notes:
+Appends the form data to the URL, in name/value pairs
+Never use GET to send sensitive data (the submitted form data is visible in the URL)
+Length of URL is limited (2048 characters)
+Useful for form submission where a user wants to bookmark the result
+GET is good for non-secure data, like query strings in Google
+
+POST notes:
+Appends the form data inside the body of the HTTP request (the submitted form data is not shown in the URL)
+POST has no size limitations, and can be used to send large amounts of data
+Form submissions with POST cannot be bookmarked
+
+Each input field must have a name attribute to be submitted
+If the name attribute is omitted, the value of that input field will not be sent at all
+
+The readonly attribute specifies that an input field is read-only
+
+The multiple attribute specifies that the user is allowed to enter more than one value in an input field
+
+The required attribute specifies that an input field must be filled out before submitting the form
+
+The autofocus attribute specifies that an input field should automatically get focus when the page loads
+
+The autocomplete attribute specifies whether a form or an input field should have autocomplete on or off
+
+The formvalidate attribute specifies that an input element should not be validated when submitted
+
+END OF HTML COMMENT
+
+-->

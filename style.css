@@ -1,0 +1,194 @@
+/* The * operator will select everything */
+/* To group selectors, separtate each selector with a comma.  Ex:  h1, h2, p {} */
+/* This sheet uses rgba for colors, or the color name. */
+/* Add a container element (like <div>) with overflow-x:auto around the table element to make it responsive 
+*/
+
+/* To hide or remove an element, JS must be used.  Use document.getElementById("idHere").style.display = "none" for removing an element, use "hidden" to hide it. */
+
+/* The z-index property specifies the stack order of an element (which will be in front, behind the others) */
+
+/* THe overflow property controls what happens to text when its too big to fit into an area and has the following values: visible (The overflow is not clipped), hidden (Hide the content after the overflow), scroll (scrollbar is added to see the rest of the content), auto (adds a scroll bar but only when necessary) */
+
+/* Body styling TODO: Make background image responsive */
+body {
+/*
+background-color:lightblue;
+*/
+background-image: url("/Images/background1.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+/*
+background-position: right top
+background-attachment: scroll;
+border-style: solid; (dashed, double, none, inset)
+border-width: 5px; (medium, thick)
+border-color: red;
+border-radius: 12px;
+margin: 25px 50px 75px 100px; (auto)
+padding: 25px 50px 75px 100px;
+outline: solid; (dashed, double, none, inset)
+outline-color: invert; (Will make sure the outline is visible regardless of color background
+outline-offset: 15px (Will add space between the outline and the border/edge
+text-align: center; (left, right, justify)
+vertical-align: top; (top, middle, bottom)
+text-decoration: underline; (overline, line-through, underline)
+text-indent: 50px; (Will indent the first line of text by 50px)
+text-shadow: 2px 2px 5px red; (Will make a text-shadow of 2px, with a 5px blur and the color red)
+text-overflow: ellipsis;
+word-wrap: break-word;
+font-family: "Times New Roman"; (Will change the font of text)
+font-style: normal; (italic, oblique)
+font-weight: normal; (bold)
+font-size: 16px; (Sets the font-size) The vw unit with make the font size responsive.
+*/
+}
+
+/* Heading 1 styling */
+h1 {
+background-color: rgb(40, 40, 40);
+font-size: 40px;
+color: white;
+}
+
+/* Paragraph styling */
+p {
+
+}
+
+/* A unvisited, visited, mouse over, and selected link */
+a:link, a:visited, a:hover, a:active {
+cursor:pointer; /* This changes the cursor */
+}
+
+/* Table, table heading, table cell styling */
+table, th, td {
+border: 1px solid black;
+text-align: left;
+padding: 10px;
+}
+
+/* Table row styling */
+tr:nthchild(even) {
+background-color: rbga(242,242,242,0);
+}
+
+/* when selected, this will change the color of the input field to gray */
+input:focus{
+background-color:gray;
+}
+
+/* An active class to show what current link the user is on */
+.active{
+background-color: rgb(76, 175, 80); 
+}
+
+/* Not active hovering over styling for navigation */
+.topnav a:hover:not(.active){
+background-color: rgb(104, 104, 104);
+color: white;
+}
+
+/*Top nav styling*/
+.topnav{
+overflow: hidden;
+background-color: rgb(40, 40, 40);
+}
+
+/*Topnav styling for links*/
+.topnav a{
+float: left;
+display: block;
+color: white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+
+/* Topnav link hovering styling */
+.topnav a:hover {
+background-color: rgb(17, 17, 17);
+}
+
+/*Topnav search container styling*/
+.topnav .search-container{
+float: right;
+}
+
+/*Search bar styling*/
+.topnav input[type=text]{
+padding: 6px;
+margin-top: 8px;
+font-size: 17px;
+border: none;
+}
+
+/*Button for search styling*/
+.topnav .search-container button{
+float: right;
+padding: 6px 10px;
+margin-top: 8px;
+margin-right: 16px;
+background: #ddd;
+font-size: 17px;
+border: none;
+cursor: pointer;
+}
+
+/* Style all font awesome icons*/
+.fa{
+padding: 20px;
+font-size: 30px;
+text-align: center;
+text-decoration:none;
+color:white;
+background: rgb(0, 178, 206);
+}
+
+/*Hover effect for font awesome icons*/
+.fa:hover{
+opacity: 0.7;
+}
+
+/*iFrame styling*/
+iFrame{
+text-align:center;
+padding: 20px;
+}
+
+/*Style for search bar*/
+.search-container{
+float: right;
+padding: 10px;
+}
+
+/*Bottom nav styling*/
+.bottom-nav{
+overflow: hidden;
+background-color: rgb(40, 40, 40);
+}
+
+/*Bottom nav link styling*/
+.bottom-nav a{
+float: left;
+display: block;
+color: white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+
+/* This will make the rows in a table hoverable 
+tr:hover {
+background-color: rgba(245,245,245,0);
+}
+*/
+
+/* This is for a id */
+#fname {
+
+}
+/* This is for a class */
+.center {
+
+}
